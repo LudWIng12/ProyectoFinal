@@ -1,0 +1,42 @@
+.link2 {
+    color: #006494;
+    font-size: 30px;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+
+#pie {
+    position: absolute;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #555555;
+    background-color: #000000;
+    height: 140px;
+    margin-top: auto;
+    width: 100%;
+    bottom: 0;
+}
+
+#pie h1 {
+    color: white;
+    margin-top: 10px;
+}
+
+.icons{
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    font-size: 30px;
+  }
+  .icons div {
+    width: 5%;
+  }
