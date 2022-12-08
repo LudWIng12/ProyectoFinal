@@ -1,0 +1,96 @@
+.estiloformulario{
+    border: 1px solid rgb(245, 245, 245);
+    padding: 20px;
+    background-color:rgb(177, 255, 113);
+    border-radius: 10px;
+}
+
+.derecha{
+    width:100%;
+    height: 600px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+         
+ }
+ i{
+    color: white;
+    font-size: 30px;
+ }
+
+  body{
+    margin:50px;
+  }
+  .wrapper {
+    background-color: rgb(74, 240, 96);
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+     
+  }
+
+  .form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+  }
+  .form-row > label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+  }
+  .form-row > input {
+    flex: 2;
+  }
+  .form-row > input,
+  .form-row > button {
+    padding: .5em;
+  }
+  .form-row > button {
+  background: rgb(6, 4, 133);
+  color: rgb(255, 255, 255);
+  border: 0;
+  }
+
+  .bparaE{
+    padding: .5em;
+    background: rgb(6, 4, 133);
+    color: rgb(255, 255, 255);
+    border: 0;
+  }
+
+  /* reducir tamano del formulario*/
+  form{
+    width: 50%;
+  
+     
+  }
+
+  .prod{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 20px;
+    background-color:rgb(177, 255, 113);
+    border-radius: 10px;
+    display:flex;
+   justify-content: center;
+   align-items: center;
+   list-style-type: none;
+   display: inline-block;
+  }
+  .icons{
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    font-size: 30px;
+  }
+  .icons div {
+    width: 5%;
+  }
+
+  .fa{
+    color:rgb(255, 255, 255);
+  }
