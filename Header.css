@@ -1,75 +1,76 @@
 .menu{
   
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    background-color: rgb(26, 26, 27);
-    position: inherit;
-    padding: 13px 0;
-    padding-left: 17px;
-    
-}
-.main{
-  margin-top: 100px;
-}
-.nav {
-    
-    display: flex;
-    list-style: none;
-    margin-right: 30px;
-    flex-direction: row;
-}
-.logo{
-    display: flex;
-    padding-right: 20px;
-}
-.uno{
-    padding: 0;
-    width: 400px;
-    height: 60px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  background-color: rgb(26, 26, 27);
+  position: inherit;
+  padding: 13px 0;
+  padding-left: 17px;
   
 }
+.main{
+margin-top: 100px;
+}
+.nav {
+  
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+  flex-direction: row;
+}
+.logo{
+  display: flex;
+  padding-right: 20px;
+}
+.uno{
+  padding: 0;
+  width: 400px;
+  height: 60px;
+
+}
 .dos{   
-    text-align: center;
-    display: flex;
-    height: auto;
+  text-align: center;
+  display: flex;
+  height: auto;
 }
 .link{
-  color: white;
+color: white;
 }
 .link2{
-  color:#006494;
-  font-size: 30px;
+color:#006494;
+font-size: 30px;
 }
 a{
-    font-family: "Noto Sans",sans-serif;
-    font-size: 17px;
-    margin: 18px 0 18px 14px;
-    padding: 0 14px 0 0;
-    text-decoration: none;
-    color: rgb(138, 15, 15);
-    border-right: 2px #5c5c5c solid;
-    
+  font-family: "Noto Sans",sans-serif;
+  font-size: 17px;
+  margin: 18px 0 18px 14px;
+  padding: 0 14px 0 0;
+  text-decoration: none;
+  color: rgb(138, 15, 15);
+  border-right: 2px #5c5c5c solid;
+  
 }
 body{
-  margin: 0;
-  position: relative;
-  padding-bottom: 3em;
-  min-height: 100vh;
+margin: 0;
+position: relative;
+padding-bottom: 3em;
+min-height: 100vh;
 }
 
 
-  .icons{
-    position: relative;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px;
-    font-size: 30px;
-  }
-  .icons div {
-    width: 5%;
-  }
+.icons{
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+  font-size: 30px;
+}
+.icons div {
+  width: 5%;
+}
+
 
 
