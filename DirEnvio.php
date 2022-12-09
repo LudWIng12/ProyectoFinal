@@ -6,7 +6,7 @@
     <h1>Datos de envio</h1>
 
     <div>
-        <form action="">
+        <form action="pago.php">
             <label for="nombre">NOMBRE: </label>
             <input type="text" name="nombre" id="nombre" require> <br> <br>
             <label for="apellido">APELLIDO: </label> 
@@ -69,7 +69,5 @@
         </form>
     </div>
 
-    <?php
-        include "footer.html";
-    ?>
 </body>
+
