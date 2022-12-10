@@ -1,7 +1,5 @@
 <?php
    session_start();
-
-    $idEnviado=$_GET['id'];
     
     $servidor='localhost';
     $cuenta='root';
@@ -27,13 +25,32 @@
          die('Error en la conexion');
     }
 
+    if(isset($_POST['editar'])){
+        $modificar = $_POST['id'];
+        $_SESSION['modificar2'] = $modificar;
+        $sql5 = "SELECT *
+                FROM productos
+                WHERE idProd='$modificar'";
+        $resultado = $conexion -> query($sql5);
+        while($fila = $resultado -> fetch_assoc()) {
+            $_SESSION['id'] = $fila['idProd'];
+            $_SESSION['nom'] = $fila['nombre'];
+            $_SESSION['cate'] = $fila['categoria'];
+            $_SESSION['des'] = $fila['descripcion'];
+            $_SESSION['ex'] = $fila['existencia'];
+            $_SESSION['precio'] = $fila['precio'];
+            $_SESSION['img'] = $fila['nomArch'];
+        }
+    }
+
     if(isset($_POST['mod'])){
-        $nombre = $_POST['nombre'];
-        $categoria = $_POST['categoria'];
-        $descripcion = $_POST['descripcion'];
-        $precio = $_POST['precio'];
-        $existencia = $_POST['existencia'];
-        $id = $_POST['id'];
+        $nombre = $_POST['nombre2'];
+        $categoria = $_POST['categoria2'];
+        $descripcion = $_POST['descripcion2'];
+        $precio = $_POST['precio2'];
+        $existencia = $_POST['existencia2'];
+        $id = $_POST['id2'];
+        $modificar1 = $_SESSION['modificar2'];
 
         $nomImg=$_FILES['imagen']['name'];
         $guardado=$_FILES['imagen']['tmp_name'];
@@ -51,7 +68,9 @@
         $nomArch = 'imagenes/'.$_FILES['imagen']['name'];
 
 
-        $ne = "UPDATE productos SET nombre='$nombre', categoria='$categoria', descripcion='$descripcion', precio='$precio', existencia='$existencia', nomArch='$nomArch' WHERE idProd='$id'";
+        $ne = "UPDATE productos 
+                SET idProd='$id', nombre='$nombre', categoria='$categoria', descripcion='$descripcion', precio='$precio', existencia='$existencia', nomArch='$nomArch' 
+                WHERE idProd='$modificar1'";
         $fin = $conexion -> query($ne);
 
         echo "<script>
@@ -99,27 +118,27 @@
         <ul class="wrapper">
             <li class="form-row">
                 <label for="nombre">ID</label>
-                <input type="text" id="id" name="id"value="<?php echo $idEnviado ?>">
+                <input type="number" id="id" name="id2"value="<?php echo $_SESSION["id"]; ?>" >
             </li>
             <li class="form-row">
                 <label for="nombre">NOMBRE</label>
-                <input type="text" id="nombre" name="nombre" value="<?php echo $_SESSION["nombre"]; ?>">
+                <input type="text" id="nombre" name="nombre2" value="<?php echo $_SESSION["nom"]; ?>">
             </li>
             <li class="form-row">
                 <label for="cuenta">PRECIO</label>
-                <input type="text" id="precio" name="precio" value="<?php echo $_SESSION["precio"]; ?>">
+                <input type="text" id="precio" name="precio2" value="<?php echo $_SESSION["precio"]; ?>">
             </li>
             <li class="form-row">
                 <label for="contra">DESCRIPCION</label>
-                <input type="text" id="descripcion" name="descripcion" value="<?php echo $_SESSION["descripcion"]; ?>">
+                <input type="text" id="descripcion" name="descripcion2" value="<?php echo $_SESSION["des"]; ?>">
             </li>
             <li class="form-row">
                 <label for="contra">CATEGORIA</label>
-                <input type="text" id="categoria" name="categoria" value="<?php echo $_SESSION["categoria"]; ?>">
+                <input type="text" id="categoria" name="categoria2" value="<?php echo $_SESSION["cate"]; ?>">
             </li>
             <li class="form-row">
                 <label for="contra">EXISTENCIA</label>
-                <input type="text" id="existencia" name="existencia" value="<?php echo $_SESSION["existencia"]; ?>">
+                <input type="text" id="existencia" name="existencia2" value="<?php echo $_SESSION["ex"]; ?>">
             </li>
             <li class="form-row">
                     <input type="file" name="imagen">
@@ -136,11 +155,11 @@
             <h1> Contactanos </h1>
         </div>
         <div class="icons">
-        <div><a class="link2"  href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></div>
-        <div><a class="link2" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></div>
-        <div><a class="link2" href="https://www.instagram.com/alfalobodinamita07/"><i class="fab fa-instagram"></i></a></div>
-        <div><a class="link2" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></div>
-    </div>
+            <div><a class="link2"  href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></div>
+            <div><a class="link2" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></div>
+            <div><a class="link2" href="https://instagram.com/"><i class="fab fa-instagram"></i></a></div>
+            <div><a class="link2" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></div>
+        </div>
         <script src="https://kit.fontawesome.com/a2cc4a6c09.js" crossorigin="anonymous"></script>
     </div>
 </body>

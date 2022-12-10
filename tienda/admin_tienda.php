@@ -126,7 +126,7 @@
                                     ?>
                                 </small></p>
                                 <p class="card-text">
-                                    <form method="get" action="editar_producto.php">
+                                    <form method='post' action="editar_producto.php">
                                         <input type="hidden" name="id" value="<?php echo $fila['idProd']; ?>">
                                         <button class="bparaE" type="submit" name="editar">Editar</button>                                       
                                     </form>
