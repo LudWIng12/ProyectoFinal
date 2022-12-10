@@ -34,15 +34,26 @@ if(isset($_SESSION['carrito'])){
 
 <header>
     <div class="menu">
-        <div class="logo" ><img class="uno" src="../Images/logo_white_large.png"></img></div>
+        <div class="logo" ><img class="uno" src="Images/logo_white_large.png"></img></div>
         <div>
             <ul class="nav">           
-                <li class="dos"><a class="link" href="../index.html">Inicio</a></li>
-                <li class="dos"><a class="link" href="tienda.php">Tienda</a></li>
-                <li class="dos"><a class="link" href="../Contacto.html">Contacto</a></li>           
+                <li class="dos"><a class="link" href="index.html">Inicio</a></li>
+                <li class="dos"><a class="link" href="tienda/tienda.php">Tienda</a></li>
+                <li class="dos"><a class="link" href="../graficas/graficas.php">Graficas</a></li>
+                <li class="dos"><a class="link" href="Contacto.html">Contacto</a></li> 
+                <li class="dos"><a class="link" href="acerca.html">Acerca de</a></li> 
+                <li class="dos"><a class="link" href="ayuda.html">Ayuda</a></li> 
+                
+            </ul>
+            
+        </div>
+        <div class="absolute">
+            <ul class="nav2">           
+                <li class="dos"><a class="link" href="loginregistro/login.php">Login</a></li>
+                <li class="dos"><a class="link" href="loginregistro/registro.php">Registrate</a></li>
+            
             </ul>
         </div>
-
     </div>
 </header>
 
@@ -175,7 +186,7 @@ if(isset($_SESSION['carrito'])){
                 while( $fila = $resultado -> fetch_assoc()){ //recorremos los registros obtenidos de la tabla
                 ?>
                 
-                <form id="formulario" name="formulario" method="post" action="cart.php">
+               
 
                 <div class="prod">
                     <div class="card-group" style="width: 10rem;">
@@ -197,14 +208,14 @@ if(isset($_SESSION['carrito'])){
                                     ?>
                                     <br>
 
-                                    <div class="text-content">
+                                    <form method="post" action="cart.php">
                                         <input name="precio" type="hidden" id="precio" value="<?php echo $fila["precio"];?>" />
                                         <input name="nombre" type="hidden" id="nombre" value="<?php echo $fila["nombre"];?>" />
                                         <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
-                                        <div class="card-body">
-                                            <button class="btn btn-primary" type="submit"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
-                                        </div>
-                                    </div>
+                                        
+                                        <button class="btn btn-primary" type="submit"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                                    </form>
+
                                     <br>
                                     <?php 
                                         echo $fila['descripcion'];
@@ -221,7 +232,7 @@ if(isset($_SESSION['carrito'])){
                         
                     </div>
                 </div>
-                </form>
+                
 
                 <?php
                 $numPro = $numPro+1;
@@ -239,11 +250,11 @@ if(isset($_SESSION['carrito'])){
             <h1> Contactanos </h1>
         </div>
         <div class="icons">
-            <div><a class="link2"  href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></div>
-            <div><a class="link2" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></div>
-            <div><a class="link2" href="https://instagram.com/"><i class="fab fa-instagram"></i></a></div>
-            <div><a class="link2" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></div>
-        </div>
+        <div><a class="link2"  href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></div>
+        <div><a class="link2" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></div>
+        <div><a class="link2" href="https://www.instagram.com/alfalobodinamita07/"><i class="fab fa-instagram"></i></a></div>
+        <div><a class="link2" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></div>
+    </div>
         <script src="https://kit.fontawesome.com/a2cc4a6c09.js" crossorigin="anonymous"></script>
     </div>
 

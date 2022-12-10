@@ -132,6 +132,9 @@ body{
   font-family: 'Press Start 2P', cursive;
   font-size: larger;
 }
+.tarjetas p{
+  background-color: red;
+}
 .mapa1{
   width: 500px;
   height: 500px;
@@ -164,5 +167,6 @@ body{
   .icons div {
     width: 5%;
   }
+
 
 

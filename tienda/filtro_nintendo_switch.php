@@ -14,30 +14,39 @@
 
 <header>
     <div class="menu">
-        <div class="logo" ><img class="uno" src="../Images/logo_white_large.png"></img></div>
+        <div class="logo" ><img class="uno" src="Images/logo_white_large.png"></img></div>
         <div>
             <ul class="nav">           
-                <li class="dos"><a class="link" href="../index.html">Inicio</a></li>
-                <li class="dos"><a class="link" href="tienda.php">Tienda</a></li>
-                <li class="dos"><a class="link" href="../Contacto.html">Contacto</a></li> 
-                <li class="dos"><a class="link" href="../acerca.html">Acerca de</a></li> 
-                <i class="fa-light fa-cart-shopping"></i>
+                <li class="dos"><a class="link" href="index.html">Inicio</a></li>
+                <li class="dos"><a class="link" href="tienda/tienda.php">Tienda</a></li>
+                <li class="dos"><a class="link" href="Contacto.html">Contacto</a></li> 
+                <li class="dos"><a class="link" href="acerca.html">Acerca de</a></li> 
+                <li class="dos"><a class="link" href="ayuda.html">Ayuda</a></li> 
+                
+            </ul>
+            
+        </div>
+        <div class="absolute">
+            <ul class="nav2">           
+                <li class="dos"><a class="link" href="loginregistro/login.php">Login</a></li>
+                <li class="dos"><a class="link" href="loginregistro/registro.php">Registrate</a></li>
+            
             </ul>
         </div>
-
     </div>
 </header>
+
 <body>
     <div id="pie">
         <div>
             <h1> Contactanos </h1>
         </div>
         <div class="icons">
-            <div><a class="link2"  href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></div>
-            <div><a class="link2" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></div>
-            <div><a class="link2" href="https://instagram.com/"><i class="fab fa-instagram"></i></a></div>
-            <div><a class="link2" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></div>
-        </div>
+        <div><a class="link2"  href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></div>
+        <div><a class="link2" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></div>
+        <div><a class="link2" href="https://www.instagram.com/alfalobodinamita07/"><i class="fab fa-instagram"></i></a></div>
+        <div><a class="link2" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></div>
+    </div>
         <script src="https://kit.fontawesome.com/a2cc4a6c09.js" crossorigin="anonymous"></script>
     </div>
 </body>
