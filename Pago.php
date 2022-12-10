@@ -16,12 +16,13 @@
 
     <div id="PayPal">
         <img src="Images/paypal.png" alt=""> <br>
-        <button>Pay Pal</button>
+        <a href="PayPal.php">Pay pal</a>
     </div>
 
     <div id="Tarjeta">
-        <img src="Images/tarjeta.jfif" alt=""> <br>
-        <button>Tarjeta</button>
+        <a href="tarjeta.php" type="button">
+            <img src="Images/tarjeta.jfif" alt=""> <br>
+        </a>
     </div>
 </body>
 </html>
