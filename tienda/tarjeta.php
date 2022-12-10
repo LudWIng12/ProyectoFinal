@@ -20,7 +20,7 @@
         <input type="text" name="Vencimiento" id="Vencimiento" placeholder="XX/XX" require> <br>
         <p>Una vez termines el pago, te llegara un email de nuestra parte</p>
 
-        <a type="button" class="btn btn-dark" href="../index.html">Terminar Pago</a>
+        <a type="button" class="btn btn-dark" href="index.html">Terminar Pago</a>
     </form>
 </body>
 </html>
