@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="imagenes/logo_small_icon_only.png">
 </head>
 
-<body>
+<footer>
     <div id="pie">
         <div>
             <h1> Contactanos </h1>
@@ -23,6 +23,6 @@
         </div>
         <script src="https://kit.fontawesome.com/a2cc4a6c09.js" crossorigin="anonymous"></script>
     </div>
-</body>
+</footer>
 
 </html>
