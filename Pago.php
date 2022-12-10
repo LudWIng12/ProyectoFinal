@@ -15,13 +15,17 @@
     <h1>Seleccione un metodo de pago</h1>
 
     <div id="PayPal">
-        <img src="Images/paypal.png" alt=""> <br>
-        <button>Pay Pal</button>
+        <a href="PayPal.php">
+            <img src="Images/paypal.png" alt="">
+        </a>
     </div>
 
+    <p>O, pague con tarjeta</p>
+
     <div id="Tarjeta">
-        <img src="Images/tarjeta.jfif" alt=""> <br>
-        <button>Tarjeta</button>
+        <a href="tarjeta.php" type="button">
+            <img src="Images/tarjeta.jfif" alt="">
+        </a>
     </div>
 </body>
 </html>
