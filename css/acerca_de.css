@@ -1,0 +1,144 @@
+@import url(//db.onlinewebfonts.com/c/e8d1660b0c3738e3d5138b97ff2b7a47?family=ITC+Conduit);
+::-webkit-scrollbar{
+    display: none;
+}
+
+#slide{
+    background-image: url("./../imagenes/programmer.jpg");
+    height: 700px;
+    background-position:10% 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+  }
+
+
+.logo{
+    display: flex;
+    padding-right: 20px;
+}
+
+body{
+  margin: 0;
+  position: relative;
+  padding-bottom: 3em;
+  min-height: 100vh;
+}
+
+
+.Titulo{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1120px;
+    color: rgb(167, 218, 255);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 2px 12px #000;
+    
+}
+.Titulo1{
+    font-family: Conduit ITC W02 Bold, Impact, sans-serif;
+    font-size:3rem ;
+    line-height: 40px;
+    line-height: 1.1;
+}
+.titulo2{
+    display: block;
+    font-size: 2.25em;
+}
+
+#container{
+   
+   
+    position:relative;
+   
+    background-size: cover;
+    top: 0;
+    right: 0;
+    left: 0;
+   width: 100%;
+   margin-bottom: 140px;
+    
+}
+#servicios{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: #10182f;
+}
+#videos{
+    margin-top: 100px;
+	width:100%;
+	height:100px;
+    display:flex;
+    justify-content: space-around;
+}
+#forma{
+    
+    background-color: aqua;
+    height:200px;
+		width:10%;
+		float:left;
+		margin: 10px;
+}
+h1{
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+    font-family: Conduit ITC W02 Bold, Impact, sans-serif;
+   
+}
+h2{
+    text-align: center;
+    
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.card {
+    justify-content: space-around;
+    margin: 10px;
+    background-color: #fff;
+    margin-right: 60px;
+    margin-left: 60px;
+    border-radius: 1px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    min-height: 330px;
+    
+  }
+
+
+  .cardheader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ 
+ .cardheader>img {
+    max-width: 100%;
+    height: 200px;
+   
+ }
+  .card-body {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+    min-height: 165px;
+  }

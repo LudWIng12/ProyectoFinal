@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+body { 
+  background-image: radial-gradient(#006494,#003554);
+  margin: 0;
+  min-height: calc(100vh - 100px - 100px);
+}
+form { max-width:420px; margin:50px auto; }
+
+h3{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #919cf0;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#ec9c34;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+.menu{
+  
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  background-color: #012a4a;
+  position: relative;
+  padding: 13px 0;
+  padding-left: 17px;
+  
+}
+.main{
+margin-top: 100px;
+}
+.nav {
+position: relative;
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+  flex-direction: row;
+}
+.nav2 {
+display: flex;
+list-style: none;
+margin-right: 108px;
+flex-direction: row;
+
+margin-left: 40%;
+}
+.absolute{
+position: absolute;
+margin-left: 76%;
+}
+.logo{
+  display: flex;
+  padding-right: 20px;
+}
+.uno{
+  padding: 0;
+  width: 400px;
+  height: 60px;
+
+}
+.dos{   
+  text-align: center;
+  display: flex;
+  height: auto;
+}
+.link{
+color: white;
+}
+.link2{
+color:#006494;
+font-size: 30px;
+}
+a{
+  font-family: "Noto Sans",sans-serif;
+  font-size: 17px;
+  margin: 18px 0 18px 14px;
+  padding: 0 14px 0 0;
+  text-decoration: none;
+  color: rgb(138, 15, 15);
+  border-right: 2px #5c5c5c solid;
+  
+}
+
+#pie {
+  position: absolute;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #555555;
+  background-color: #121212;
+  height: 240px;
+  margin-top: auto;
+  width: 100%;
+  bottom: 0;
+}
+#pie h1 {
+  color: white;
+  margin-top: 10px;
+}
+.icons{
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+  font-size: 30px;
+}
+.icons div {
+  width: 5%;
+}
