@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 /*    font-family: 'Press Start 2P', cursive;
 
     font-family: 'Zen Dots', cursive;*/
@@ -133,7 +134,8 @@ body{
   font-size: larger;
 }
 .tarjetas p{
-  background-color: red;
+  font-size: 20px;
+  font-family: 'Dosis', sans-serif;
 }
 .mapa1{
   width: 500px;
