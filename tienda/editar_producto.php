@@ -136,11 +136,11 @@
             <h1> Contactanos </h1>
         </div>
         <div class="icons">
-            <div><a class="link2"  href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></div>
-            <div><a class="link2" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></div>
-            <div><a class="link2" href="https://instagram.com/"><i class="fab fa-instagram"></i></a></div>
-            <div><a class="link2" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></div>
-        </div>
+        <div><a class="link2"  href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></div>
+        <div><a class="link2" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></div>
+        <div><a class="link2" href="https://www.instagram.com/alfalobodinamita07/"><i class="fab fa-instagram"></i></a></div>
+        <div><a class="link2" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></div>
+    </div>
         <script src="https://kit.fontawesome.com/a2cc4a6c09.js" crossorigin="anonymous"></script>
     </div>
 </body>
