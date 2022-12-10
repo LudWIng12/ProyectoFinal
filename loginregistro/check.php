@@ -67,6 +67,10 @@
                     echo '<script> alert(" Bienvenido!") </script>';
                     $cont=0;
                     $_SESSION['num']=$cont; 
+                    ?> <script type='text/javascript'>
+                    document.location.href = '../index.php';
+                    </script>
+                    <?php
                     }
                     else{
                         $cont++;

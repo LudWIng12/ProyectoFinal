@@ -1,6 +1,7 @@
 <?php
-    include "header.php";
     
+    include "header.php";
+    var_dump($_SESSION["usuario"]);
 ?>
 <head>
     <meta charset="UTF-8">
@@ -14,6 +15,7 @@
 
 
 <body>
+    
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
         <div class="carousel-item active">

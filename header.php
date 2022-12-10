@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <head>
     <meta charset="UTF-8">
     <title>Inicio</title>
@@ -22,11 +25,20 @@
             
         </div>
         <div class="absolute">
-            <ul class="nav2">           
+            
+            
+            <ul class="nav2">  
+            <?php
+                if(isset($_SESSION["usuario"])){
+                    ?> <li class="dos"><a class="link" href="loginregistro/logout.php">Salir</a></li>
+                <?php}else{
+            ?>         
                 <li class="dos"><a class="link" href="loginregistro/login.php">Login</a></li>
                 <li class="dos"><a class="link" href="loginregistro/registro.php">Registrate</a></li>
-            
+            <?php } ?>
             </ul>
+
+            
         </div>
     </div>
 </header>
