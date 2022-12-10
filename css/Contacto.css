@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Zen+Dots&display=swap');
 body { 
   background-image: radial-gradient(#006494,#003554);
   margin: 0;
-  min-height: calc(100vh - 100px - 100px);
+  padding-bottom: 300px;
+  position: relative;
+  min-height: 100vh;
 }
 form { max-width:420px; margin:50px auto; }
 
@@ -129,6 +131,9 @@ a{
   margin-top: auto;
   width: 100%;
   bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 40px;
 }
 #pie h1 {
   color: white;
@@ -146,4 +151,16 @@ a{
 }
 .icons div {
   width: 5%;
+}
+.faq{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: 'Press Start 2P', cursive;
+}
+.faq1{
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  margin-top: 50px;
 }
