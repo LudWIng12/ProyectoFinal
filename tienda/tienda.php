@@ -175,7 +175,7 @@ if(isset($_SESSION['carrito'])){
                 while( $fila = $resultado -> fetch_assoc()){ //recorremos los registros obtenidos de la tabla
                 ?>
                 
-                <form id="formulario" name="formulario" method="post" action="cart.php">
+               
 
                 <div class="prod">
                     <div class="card-group" style="width: 10rem;">
@@ -197,14 +197,14 @@ if(isset($_SESSION['carrito'])){
                                     ?>
                                     <br>
 
-                                    <div class="text-content">
+                                    <form method="post" action="cart.php">
                                         <input name="precio" type="hidden" id="precio" value="<?php echo $fila["precio"];?>" />
                                         <input name="nombre" type="hidden" id="nombre" value="<?php echo $fila["nombre"];?>" />
                                         <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
-                                        <div class="card-body">
-                                            <button class="btn btn-primary" type="submit"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
-                                        </div>
-                                    </div>
+                                        
+                                        <button class="btn btn-primary" type="submit"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                                    </form>
+
                                     <br>
                                     <?php 
                                         echo $fila['descripcion'];
@@ -221,7 +221,7 @@ if(isset($_SESSION['carrito'])){
                         
                     </div>
                 </div>
-                </form>
+                
 
                 <?php
                 $numPro = $numPro+1;
