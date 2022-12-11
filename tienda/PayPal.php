@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<?php
+    include "header.php";
+?>
 <body>
 <div class="alert alert-danger" role="alert">
   Error, no se ah podido iniciar sesion en PayPal

@@ -86,22 +86,9 @@
     <link rel="stylesheet" href="../HeadFooter.css">
 </head>
 
-<header>
-    <div class="menu">
-        <div class="logo" ><img class="uno" src="../Images/logo_white_large.png"></img></div>
-        <div>
-            <ul class="nav">           
-                <li class="dos"><a class="link" href="../index.html">Inicio</a></li>
-                <li class="dos"><a class="link" href="tienda.php">Tienda</a></li>
-                <li class="dos"><a class="link" href="../graficas/graficas.php">Graficas</a></li>
-                <li class="dos"><a class="link" href="../Contacto.html">Contacto</a></li> 
-                <li class="dos"><a class="link" href="../acerca.html">Acerca de</a></li> 
-                <i class="fa-light fa-cart-shopping"></i>
-            </ul>
-        </div>
-
-    </div>
-</header>
+<?php
+    include "header.php";
+?>
 
 <body>
 

@@ -1,3 +1,7 @@
+<?php
+    include "header.php";
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,32 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graficas</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="../HeadFooter.css">
+    <link rel="stylesheet" href="../css/Header.css">
+    <link rel="stylesheet" href="../css/HeadFooter.css">
 </head>
-
-<header>
-    <div class="menu">
-        <div class="logo" ><img class="uno" src="Images/logo_white_large.png"></img></div>
-        <div>
-            <ul class="nav">           
-                <li class="dos"><a class="link" href="index.html">Inicio</a></li>
-                <li class="dos"><a class="link" href="tienda/tienda.php">Tienda</a></li>
-                <li class="dos"><a class="link" href="Contacto.html">Contacto</a></li> 
-                <li class="dos"><a class="link" href="acerca.html">Acerca de</a></li> 
-                <li class="dos"><a class="link" href="ayuda.html">Ayuda</a></li> 
-                
-            </ul>
-            
-        </div>
-        <div class="absolute">
-            <ul class="nav2">           
-                <li class="dos"><a class="link" href="loginregistro/login.php">Login</a></li>
-                <li class="dos"><a class="link" href="loginregistro/registro.php">Registrate</a></li>
-            
-            </ul>
-        </div>
-    </div>
-</header>
 
 <body>
     <div class="col-lg-12" style="padding-top: 20px;">

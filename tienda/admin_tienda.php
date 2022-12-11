@@ -16,29 +16,9 @@
 
 </head>
 
-<header>
-    <div class="menu">
-        <div class="logo" ><img class="uno" src="Images/logo_white_large.png"></img></div>
-        <div>
-            <ul class="nav">           
-                <li class="dos"><a class="link" href="index.html">Inicio</a></li>
-                <li class="dos"><a class="link" href="tienda/tienda.php">Tienda</a></li>
-                <li class="dos"><a class="link" href="Contacto.html">Contacto</a></li> 
-                <li class="dos"><a class="link" href="acerca.html">Acerca de</a></li> 
-                <li class="dos"><a class="link" href="ayuda.html">Ayuda</a></li> 
-                
-            </ul>
-            
-        </div>
-        <div class="absolute">
-            <ul class="nav2">           
-                <li class="dos"><a class="link" href="loginregistro/login.php">Login</a></li>
-                <li class="dos"><a class="link" href="loginregistro/registro.php">Registrate</a></li>
-            
-            </ul>
-        </div>
-    </div>
-</header>
+<?php
+    include "header.php";
+?>
 
 <body>
 <script>
