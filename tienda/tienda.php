@@ -19,17 +19,27 @@
 
 <?php 
 
-$carrito_mio=$_SESSION['carrito'];
-$_SESSION['carrito']=$carrito_mio;
+if(isset($_SESSION['carrito'])){
+    $carrito_mio=$_SESSION['carrito'];
+}
+
+
 
 // contamos nuestro carrito
 if(isset($_SESSION['carrito'])){
     for($i=0;$i<=count($carrito_mio)-1;$i ++){
-    if($carrito_mio[$i]!=NULL){ 
-    $total_cantidad = $carrito_mio['cantidad'];
+        if(isset($carrito_mio[$i])){
+        if($carrito_mio[$i]!=NULL){ 
+        if(!isset($carrito_mio['cantidad'])){$carrito_mio['cantidad'] = '0';}else{ $carrito_mio['cantidad'] = $carrito_mio['cantidad'];}
+        $total_cantidad = $carrito_mio['cantidad'];
     $total_cantidad ++ ;
+    if(!isset($totalcantidad)){$totalcantidad = '0';}else{ $totalcantidad = $totalcantidad;}
     $totalcantidad += $total_cantidad;
     }}}
+}
+
+    //declaramos variable
+    if(!isset($totalcantidad)){$totalcantidad = '';}else{ $totalcantidad = $totalcantidad;}
 ?>
 
 <header>
@@ -94,13 +104,13 @@ if(isset($_SESSION['carrito'])){
 				<div>
 					<div class="p-2">
 						<ul class="list-group mb-3">
-							<?php
-							if(isset($_SESSION['carrito'])){
-							$total=0;
-							for($i=0;$i<=count($carrito_mio)-1;$i ++){
-							if($carrito_mio[$i]!=NULL){
-						
-            ?>
+                            <?php
+                                if(isset($_SESSION['carrito'])){
+                                $total=0;
+                                for($i=0;$i<=count($carrito_mio)-1;$i ++){
+                                    if(isset($carrito_mio[$i])){
+                                    if($carrito_mio[$i]!=NULL){
+                            ?>
 							<li class="list-group-item d-flex justify-content-between lh-condensed">
 								<div class="row col-12" >
 									<div class="col-6 p-0" style="text-align: left; color: #000000;"><h6 class="my-0">Cantidad: <?php echo $carrito_mio[$i]['cantidad'] ?> : <?php echo $carrito_mio[$i]['nombre']; // echo substr($carrito_mio[$i]['titulo'],0,10); echo utf8_decode($titulomostrado)."..."; ?></h6>
@@ -115,17 +125,21 @@ if(isset($_SESSION['carrito'])){
 							}
 							}
 							}
+                            }
 							?>
 							<li class="list-group-item d-flex justify-content-between">
 							<span  style="text-align: left; color: #000000;">TOTAL</span>
 							<strong  style="text-align: left; color: #000000;"><?php
-							if(isset($_SESSION['carrito'])){
-							$total=0;
-							for($i=0;$i<=count($carrito_mio)-1;$i ++){
-							if($carrito_mio[$i]!=NULL){ 
-							$total=$total + ($carrito_mio[$i]['precio'] * $carrito_mio[$i]['cantidad']);
-							}}}
-							echo $total; ?> $</strong>
+							    if(isset($_SESSION['carrito'])){
+                                $total=0;
+                                for($i=0;$i<=count($carrito_mio)-1;$i ++){
+                                    if(isset($carrito_mio[$i])){
+                                if($carrito_mio[$i]!=NULL){ 
+                                $total=$total + ($carrito_mio[$i]['precio'] * $carrito_mio[$i]['cantidad']);
+                                }
+                                }}}
+                                if(!isset($total)){$total = '0';}else{ $total= $total;}
+                                echo $total; ?> $</strong>
 							</li>
 						</ul>
 					</div>
