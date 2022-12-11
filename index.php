@@ -1,6 +1,5 @@
 <?php
     include "header.php";
-    
 ?>
 <head>
     <meta charset="UTF-8">

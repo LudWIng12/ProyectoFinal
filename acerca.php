@@ -26,7 +26,7 @@
     <div id="slide">
         <div class="Titulo">
             <div class="Titulo1">
-                ¿Programas Colados?
+            Libera tu imaginación con nuestros juegos
                 <span class="titulo2">!Conocenos!</span>
             </div>
         </div>
@@ -38,7 +38,7 @@
             
             <div class="card">
                 <div class="cardheader">
-                  <img src="imagenes/vision.jpg" alt="ballons" />
+                  <img src="Images/vision.png" alt="ballons" />
                 </div>
                 <div class="card-body">
                   
@@ -46,7 +46,12 @@
                     Vision
                   </h2>
                   <p>
-                    Queremos ofreces certificaciones de muy buen nivel y de bajo costo a nuestros futuros compañeros de trabajo, para ayudarlos a crecer como desarrolladores
+                  Nuestra visión es convertirnos en el proveedor líder mundial de ventas de videojuegos, ofreciendo la mejor 
+                  selección de juegos y accesorios a precios competitivos. Nos esforzamos por brindar una experiencia de compra
+                  agradable y conveniente para nuestros clientes, al mismo tiempo que brindamos un excelente servicio al cliente.
+                  Continuaremos innovando y desarrollando nuevos productos y servicios para satisfacer las necesidades cambiantes
+                  de nuestros clientes. También nos esforzaremos por crear un entorno positivo e inclusivo para nuestros empleados,
+                  socios y clientes.
                   </p>
 
                   
@@ -54,7 +59,7 @@
               </div>
               <div class="card">
                 <div class="cardheader">
-                  <img src="imagenes/mision.jpg" alt="ballons" />
+                  <img src="Images/elcap.png" alt="ballons" />
                 </div>
                 <div class="card-body">
                   
@@ -62,38 +67,37 @@
                     Mision
                   </h2>
                   <p>
-                    Preparar a los nuevos desarrolladores con certificaciones que validen sus conocimientos profesionales sobre distintos lenguajes de programacion, y asi ayudarlos a empezar mas facilmente sus proyectos
+                  El objetivo de nuestra empresa de venta de videojuegos es maximizar las ganancias vendiendo videojuegos a los clientes a precios competitivos y brindando un excelente servicio al cliente.
                   </p>
-                 
                   
                 </div>
               </div>
               <div class="card">
                 <div class="cardheader">
-                  <img src="imagenes/reconocimiento.jpg" alt="ballons" />
+                  <img src="Images/batman.png" alt="ballons" />
                 </div>
                 <div class="card-body">
                   <h2>
                     Reconocimiento 
                   </h2>
                   <p>
-                    Nuestras certicaciones son reconocidas a nivel mundial, superando a las certificaciones como google y amazon, pues nuestro trabajo como desarrolladores nunca ha podido igualarse
+                    Nuestra empresa es reconocida a nivel mundial, ya que ofrecemos el mas amplio catalogo de videojuegos y accesorios al mejor precio del mercado
                   </p>
                   
                 </div>
               </div>
               <div class="card">
                 <div class="cardheader">
-                  <img src="imagenes/equipo.png" alt="ballons" />
+                  <img src="Images/batrobi.png" alt="ballons" />
                 </div>
                 <div class="card-body">
                   <h2>
                     Equipo
                   </h2>
                   <p>
-                   CEO: Javier Guerrero Carrera
+                   CEO: Javier Guerrero Carrera & Cesar Aleman
                    Direccion: Fatima Del Rocio
-                   Marketing: Luis Javier Reynoso
+                   Marketing: Luis Javier Reynoso & Montserrat Flores Garcia
                    Directora: Lizbeth Xitali Muñoz
                   
                   </p>
