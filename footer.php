@@ -21,6 +21,9 @@
             <div><a class="link2" href="https://instagram.com/"><i class="fab fa-instagram"></i></a></div>
             <div><a class="link2" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></div>
         </div>
+        <div>
+            <p>@CopyrightLoboGamer 2022</p>
+        </div>
         <script src="https://kit.fontawesome.com/a2cc4a6c09.js" crossorigin="anonymous"></script>
     </div>
 </footer>
