@@ -1,7 +1,7 @@
 <?php
     
     include "header.php";
-    var_dump($_SESSION["usuario"]);
+    
 ?>
 <head>
     <meta charset="UTF-8">

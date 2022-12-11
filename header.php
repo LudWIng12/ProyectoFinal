@@ -20,22 +20,30 @@
                 <li class="dos"><a class="link" href="Contacto.php">Contacto</a></li> 
                 <li class="dos"><a class="link" href="acerca.php">Acerca de</a></li> 
                 <li class="dos"><a class="link" href="ayuda.php">Ayuda</a></li> 
-                
+                <?php
+                    if(isset($_SESSION["usuario"]) && $_SESSION["usuario"]=="admin"){
+                        echo '<li class="dos"><a class="link" href="tienda/admin_tienda.php">Modificar</a></li> ';
+                        echo '<li class="dos"><a class="link" href="grafica/graficas.php">Graficas</a></li> ';
+                    }
+                ?>
             </ul>
             
         </div>
         <div class="absolute">
             
-            
+            <p class="dos"></p>
             <ul class="nav2">  
             <?php
                 if(isset($_SESSION["usuario"])){
-                    ?> <li class="dos"><a class="link" href="loginregistro/logout.php">Salir</a></li>
-                <?php}else{
+                    $usr=$_SESSION["usuario"];
+                      echo '<li class="dos"><a class="link" href="loginregistro/logout.php">Salir</a></li>';
+                      echo "<a>$usr</a>";
+                }else{
+                    echo '<li class="dos"><a class="link" href="loginregistro/login.php">Login</a></li>';
+                    echo '<li class="dos"><a class="link" href="loginregistro/registro.php">Registrate</a></li>';
+                }
             ?>         
-                <li class="dos"><a class="link" href="loginregistro/login.php">Login</a></li>
-                <li class="dos"><a class="link" href="loginregistro/registro.php">Registrate</a></li>
-            <?php } ?>
+                
             </ul>
 
             
