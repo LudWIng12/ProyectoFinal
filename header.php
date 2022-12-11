@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <head>
     <meta charset="UTF-8">
     <title>Inicio</title>
@@ -17,16 +20,33 @@
                 <li class="dos"><a class="link" href="Contacto.php">Contacto</a></li> 
                 <li class="dos"><a class="link" href="acerca.php">Acerca de</a></li> 
                 <li class="dos"><a class="link" href="ayuda.php">Ayuda</a></li> 
-                
+                <?php
+                    if(isset($_SESSION["usuario"]) && $_SESSION["usuario"]=="admin"){
+                        echo '<li class="dos"><a class="link" href="tienda/admin_tienda.php">Modificar</a></li> ';
+                        echo '<li class="dos"><a class="link" href="grafica/graficas.php">Graficas</a></li> ';
+                    }
+                ?>
             </ul>
             
         </div>
         <div class="absolute">
-            <ul class="nav2">           
-                <li class="dos"><a class="link" href="loginregistro/login.php">Login</a></li>
-                <li class="dos"><a class="link" href="loginregistro/registro.php">Registrate</a></li>
             
+            
+            <ul class="nav2">  
+            <?php
+                if(isset($_SESSION["usuario"])){
+                    $usr=$_SESSION["usuario"];
+                      echo '<li class="dos"><a class="link" href="loginregistro/logout.php">Salir</a></li>';
+                      echo "<a>$usr</a>";
+                }else{
+                    echo '<li class="dos"><a class="link" href="loginregistro/login.php">Login</a></li>';
+                    echo '<li class="dos"><a class="link" href="loginregistro/registro.php">Registrate</a></li>';
+                }
+            ?>         
+                
             </ul>
+
+            
         </div>
     </div>
 </header>

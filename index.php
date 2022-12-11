@@ -1,4 +1,5 @@
 <?php
+    
     include "header.php";
 ?>
 <head>
@@ -13,6 +14,7 @@
 
 
 <body>
+    
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
         <div class="carousel-item active">
