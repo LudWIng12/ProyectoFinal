@@ -2,8 +2,8 @@
   
   font-family: 'Open Sans', sans-serif;
   display: flex;
-  background-color: rgb(26, 26, 27);
-  position: inherit;
+  background-color: #012a4a;
+  position: relative;
   padding: 13px 0;
   padding-left: 17px;
   
@@ -12,11 +12,23 @@
 margin-top: 100px;
 }
 .nav {
-  
+position: relative;
   display: flex;
   list-style: none;
   margin-right: 30px;
   flex-direction: row;
+}
+.nav2 {
+display: flex;
+list-style: none;
+margin-right: 108px;
+flex-direction: row;
+
+margin-left: 40%;
+}
+.absolute{
+position: absolute;
+margin-left: 76%;
 }
 .logo{
   display: flex;
@@ -50,27 +62,5 @@ a{
   border-right: 2px #5c5c5c solid;
   
 }
-body{
-margin: 0;
-position: relative;
-padding-bottom: 3em;
-min-height: 100vh;
-}
-
-
-.icons{
-  position: relative;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 10px;
-  font-size: 30px;
-}
-.icons div {
-  width: 5%;
-}
-
 
 
