@@ -27,7 +27,7 @@
         <div class="Titulo">
             <div class="Titulo1">
             Libera tu imaginación con nuestros juegos
-                <span class="titulo2">!Conocenos!</span>
+                <span class="titulo2">¡Conocenos!</span>
             </div>
         </div>
     </div>
@@ -66,7 +66,7 @@
                    CEO: Javier Guerrero Carrera & Cesar Aleman<br>
                    Direccion: Fatima Del Rocio<br>
                    Marketing: Luis Javier Reynoso & Montserrat Flores<br>
-                   Directora: Lizbeth Xitali Muñoz<br>
+                   Director:  Luis Jimenez<br>
                   </p>
                  
               </div>
