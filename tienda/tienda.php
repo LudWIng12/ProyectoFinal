@@ -190,7 +190,7 @@ if(isset($_SESSION['carrito'])){
                
 
                 <div class="prod">
-                    <div class="card-group" style="width: 10rem;">
+                    <div class="card-group" style="width: 14rem;">
                         <div class="card">
                             <img class="card-img-top" src="<?php echo $fila['nomArch'];?>" alt="Card image cap">
                             <div class="card-body">
