@@ -31,7 +31,7 @@
         </div>
         <div class="absolute">
             
-            <p class="dos"></p>
+            
             <ul class="nav2">  
             <?php
                 if(isset($_SESSION["usuario"])){
