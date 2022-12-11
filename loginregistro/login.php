@@ -2,7 +2,7 @@
     session_start();
     error_reporting(E_ERROR | E_PARSE);
     //var_dump($_SESSION["block"]);
-   
+    include "../header.php";
 ?>  
 <!DOCTYPE html>
 <html lang="en">

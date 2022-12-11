@@ -4,7 +4,12 @@
     $cuenta='root';
     $password='';
     $bd='tienda';
-     
+    require 'mailer/Exception.php';
+    require 'mailer/PHPMailer.php';
+    require 'mailer/SMTP.php';
+            use PHPMailer\PHPMailer\PHPMailer;
+            use PHPMailer\PHPMailer\Exception;  
+            
     //conexion a la base de datos
     $conexion = new mysqli($servidor,$cuenta,$password,$bd);
 
@@ -35,8 +40,41 @@
                 //hacemos cadena con la sentencia mysql para insertar datos
                 $sql = "INSERT INTO usuarios ( cuenta, contrasena,correo) VALUES('$cuenta','$passhash','$correo')";
                 $conexion->query($sql);  //aplicamos sentencia que inserta datos en la tabla usuarios de la base de datos
+                $email = $_POST["correo"];
                 
+                $mail = new PHPMailer(true);
+
+                try{
+                    //Server settings
+                    $mail->isSMTP();
+                    $mail->Host       = 'smtp.office365.com';                   
+                    $mail->SMTPAuth   = true;                                   
+                    $mail->Username   = 'al292422@edu.uaa.mx';                  
+                    $mail->Password   = 'uaa.Lu1s';                               
+                    $mail->SMTPSecure = 'tls';
+                    $mail->Port       = 587;
+                    
+                    $mail->setFrom('al292422@edu.uaa.mx', 'Equipo 4');
+                    $mail->addAddress($email);
+                    
+                    $mail->isHTML(true);
+                    $mail->Subject = 'Cupon de descuento';
+                    $mail->Body    = "<h1>Tu cupon de descuento!:$contranew</h1>";
+                    #This is the body in plain text for non-HTML mail clients
+                    $mail->AltBody = 'Disfruta!';
+
+                    $mail->send();
+                     ?> 
+                     <!-- <script type='text/javascript'> -->
+                     <!-- document.location.href = 'login.php'; -->
+                    <!-- </script> -->
+                    <?php
+                }
+                catch(Exception $e){
+                    echo "No se pudo enviar el mensaje. Mailer Error: {$mail->ERRORINFO}";
+                }
                 if ($conexion->affected_rows >= 1){ //revisamos que se inserto un registro
+                
                     echo '<script> alert("registro insertado") </script>';
                     ?> <script type='text/javascript'>
                     document.location.href = 'login.php';
