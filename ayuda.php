@@ -22,48 +22,50 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                        Accordion Item #1
+                        ¿Qué tipos y marcas de videojuegos venden?
                     </button>
                 </h2>
                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                     <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        <strong>Vendemos de todo tipo.</strong> Vendemos una variedad de videojuegos tanto fisicos como digitales para todas las plataformas, incluidas PC, Xbox, PlayStation y Nintendo.
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                        Accordion Item #2
+                        ¿Ofrecen algún descuento o promoción?
                     </button>
                 </h2>
                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                     <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    ¡Nos complace anunciar nuestras nuevas promociones y descuentos para la venta de videojuegos! Nuestra empresa se dedica a ofrecer los mejores precios y una selección de videojuegos, y queremos asegurarnos de que nuestros clientes aprovechen al máximo sus compras.
+
+                    Para empezar, estamos ofreciendo un 10 % de descuento en todas las compras de videojuegos. Este descuento se aplica tanto a juegos nuevos como usados, por lo que puedes ahorrar aún más en tus títulos favoritos. También tenemos una promoción especial para las personas que se suscriban a nuestra pagina.
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                        Accordion Item #3
+                        ¿Cuanto llevan en el mercado?
                     </button>
                 </h2>
                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                     <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    LoboGamer ha sido líder en la industria de los videojuegos desde su fundación en 2001. Fundada por Javier Guerrero Carrera el Jefe, la compañía ha pasado de ser una pequeña startup a una potencia mundial, distribuyendo algunos de los videojuegos más queridos e icónicos de todos los tiempos.
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                        Accordion Item #3
+                        ¿Se pueden reservar juegos?
                     </button>
                 </h2>
                 <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
                     <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        Contamos con una gran amistad con todas las desarrolladoras del mundo, por lo cual siempre tendremos los lanzamientos antes que cualquier otra plataforma, a todos los que esten suscritos a la pagina, les llegara un correo cuando se puedan reservar los ultimos titulos que han salido a la venta y les llegara un dia antes de su estreno oficial.
                     </div>
                 </div>
                 
@@ -71,12 +73,13 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingFive">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                        Accordion Item #3
+                        ¿A donde hacen envios?
                     </button>
                 </h2>
                 <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
                     <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        <strong>Todo el universo</strong> Nuestra compañia al ser tan grande, tenemos una tienda en cada pais y en cada estado del mundo, aun asi, nuestra principal sede esta en la ciudad de Aguscalientes.
+                        Aun asi hacemos envios a todo el mundo sin excepsion alguna y hasta la estacion espacial internacional.
                     </div>
                 </div>
                 
@@ -84,12 +87,12 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingSix">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                        Accordion Item #3
+                        Politica de reembolso
                     </button>
                 </h2>
                 <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
                     <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        Valoramos a nuestros clientes y estamos comprometidos a brindar soporte de calidad cuando las cosas no salen según lo planeado. Tiene quince (15) días desde la compra en la tienda o la recepción del envío de un artículo nuevo, y siete (7) días para un artículo usado, para cambiar o devolver, a menos que se indique en nuestras excepciones. Puede devolver la mayoría de los artículos en la tienda, en línea o llamando a nuestro servicio de atención al cliente al 4491234567; los pedidos en línea pueden devolverse en la tienda sin cargo, y las devoluciones enviadas incurrirán en un cargo de $8.99 dólares. Para procesar su devolución, proporcione su recibo en la tienda o el número de pedido de LoboGamer.com. Reembolsaremos el precio de compra y los impuestos y cargos aplicables a la forma de pago original o proporcionaremos un reemplazo.
                     </div>
                 </div>
                 
