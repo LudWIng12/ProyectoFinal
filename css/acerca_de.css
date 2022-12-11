@@ -4,8 +4,8 @@
 }
 
 #slide{
-    background-image: url("./../imagenes/programmer.jpg");
-    height: 700px;
+    background-image: url("./../Images/spartans.jpg");
+    height: 800px;
     background-position:10% 60%;
     background-size: cover;
     background-repeat: no-repeat;
