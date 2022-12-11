@@ -16,7 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> 
 <link href="//db.onlinewebfonts.com/c/e8d1660b0c3738e3d5138b97ff2b7a47?family=ITC+Conduit" rel="stylesheet" type="text/css"/>
 <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
 
@@ -35,76 +35,45 @@
     <div id="container">
         <h1>Programas colados</h1>
         <div id="servicios">
-            
-            <div class="card">
-                <div class="cardheader">
-                  <img src="Images/vision.png" alt="ballons" />
-                </div>
-                <div class="card-body">
-                  
-                  <h2>
-                    Vision
-                  </h2>
-                  <p>
-                  Nuestra visión es convertirnos en el proveedor líder mundial de ventas de videojuegos, ofreciendo la mejor 
-                  selección de juegos y accesorios a precios competitivos. Nos esforzamos por brindar una experiencia de compra
-                  agradable y conveniente para nuestros clientes, al mismo tiempo que brindamos un excelente servicio al cliente.
-                  Continuaremos innovando y desarrollando nuevos productos y servicios para satisfacer las necesidades cambiantes
-                  de nuestros clientes. También nos esforzaremos por crear un entorno positivo e inclusivo para nuestros empleados,
-                  socios y clientes.
-                  </p>
+          <div class="tarjetas">
+          <div class="card">
+              <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/KWobNSr_Us8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                  <h5 class="card-title">THE GAME AWARDS 2022</h5>
+                  <p class="card-text">Aventureros errantes de tiempos pasados y mundos de fantasía oscura, dioses con muy malas pulgas, cazadoras de un futuro no lo suficientemente lejano y hasta un gatete muy curioso se disputan el honor de protagonizar el mejor juego de 2022. A estas alturas de la partida, y con más de un bombazo por llegar, todos tenemos más o menos claro cuál es el que más nos ha gustado. Pero solo puede haber un número uno. The Game Awards 2022 quizás no pondrá consenso pero, en el proceso de descubrirlo, disfrutaremos de una gran gala del videojuego con montones de anuncios y sorpresas. ¿Cómo perdernosla?</p>
+               
+              </div>
+          </div>
+          <div class="card">
+              <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/CptaXqVY6-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                  <h5 class="card-title">Elden Ring</h5>
+                  <p class="card-text">La Orden Dorada se ha roto. Levántate, empañado y déjate guiar por la gracia para blandir el poder del Anillo Elden y convertirte en un Señor Elden en las Tierras Intermedias. En las Tierras Intermedias gobernadas por la Reina Marika la Eterna, el Anillo de Elden, la fuente del Erdtree, ha sido destruido. La descendencia de Marika, todos semidioses, reclamó los fragmentos del Anillo de Elden conocidos como las Grandes Runas, y la mancha loca de su nueva fuerza desencadenó una guerra: La Destrucción. Una guerra que significó el abandono por parte de la Gran Voluntad. Y ahora la guía de la gracia llegará a los Deslucidos que fueron despreciados por la gracia del oro y exiliados de las Tierras Intermedias. Muertos que aún vives, tu gracia perdida hace mucho tiempo, sigue el camino hacia las Tierras Entre más allá del mar brumoso para pararte ante el Anillo de Elden. Y conviértete en el Elden Lord.</p>
+                
+              </div>
+          </div>
+          <div class="card">
+              <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/F3jePdO9_jc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                  <h5 class="card-title">God of War Ragnarök</h5>
+                  <p class="card-text">Embárcate en un viaje épico e inquebrantable mientras Kratos y Atreus deben decidir si seguirán su destino o verán más allá de lo que ya está escrito y tomarán las riendas de su futuro.  
 
-                  
-                </div>
+                      Sé testigo de la dinámica cambiante de su relación mientras se preparan para la guerra; Atreus tiene hambre de conocimiento que lo ayude a comprender la profecía de "Loki", mientras Kratos lucha por liberarse del pasado y ser el padre que su hijo necesita.
+                      
+                      Mientras tanto, los ojos de Asgard observan todos sus movimientos...
+                      </p>
+                 
               </div>
-              <div class="card">
-                <div class="cardheader">
-                  <img src="Images/elcap.png" alt="ballons" />
-                </div>
-                <div class="card-body">
-                  
-                  <h2>
-                    Mision
-                  </h2>
-                  <p>
-                  El objetivo de nuestra empresa de venta de videojuegos es maximizar las ganancias vendiendo videojuegos a los clientes a precios competitivos y brindando un excelente servicio al cliente.
-                  </p>
-                  
-                </div>
-              </div>
-              <div class="card">
-                <div class="cardheader">
-                  <img src="Images/batman.png" alt="ballons" />
-                </div>
-                <div class="card-body">
-                  <h2>
-                    Reconocimiento 
-                  </h2>
-                  <p>
-                    Nuestra empresa es reconocida a nivel mundial, ya que ofrecemos el mas amplio catalogo de videojuegos y accesorios al mejor precio del mercado
-                  </p>
-                  
-                </div>
-              </div>
-              <div class="card">
-                <div class="cardheader">
-                  <img src="Images/batrobi.png" alt="ballons" />
-                </div>
-                <div class="card-body">
-                  <h2>
-                    Equipo
-                  </h2>
-                  <p>
-                   CEO: Javier Guerrero Carrera & Cesar Aleman
-                   Direccion: Fatima Del Rocio
-                   Marketing: Luis Javier Reynoso & Montserrat Flores Garcia
-                   Directora: Lizbeth Xitali Muñoz
-                  
-                  </p>
-
-                  
-                </div>
-              </div>
+              
+        </div>
+        
+    </div>
         </div>
     </div>
     <div id="pie">
@@ -119,5 +88,6 @@
       </div>
         <script src="https://kit.fontawesome.com/a2cc4a6c09.js" crossorigin="anonymous"></script>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
