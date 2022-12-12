@@ -23,8 +23,8 @@
                 <li class="dos"><a class="link" href="../ayuda.php">Ayuda</a></li> 
                 <?php
                     if(isset($_SESSION["usuario"]) && $_SESSION["usuario"]=="admin"){
-                        echo '<li class="dos"><a class="link" href="tienda/admin_tienda.php">Modificar</a></li> ';
-                        echo '<li class="dos"><a class="link" href="grafica/graficas.php">Graficas</a></li> ';
+                        echo '<li class="dos"><a class="link" href="admin_tienda.php">Modificar</a></li> ';
+                        echo '<li class="dos"><a class="link" href="../grafica/graficas.php">Graficas</a></li> ';
                     }
                 ?>
             </ul>
@@ -37,11 +37,11 @@
             <?php
                 if(isset($_SESSION["usuario"])){
                     $usr=$_SESSION["usuario"];
-                      echo '<li class="dos"><a class="link" href="loginregistro/logout.php">Salir</a></li>';
+                      echo '<li class="dos"><a class="link" href="../loginregistro/logout.php">Salir</a></li>';
                       echo "<a>$usr</a>";
                 }else{
-                    echo '<li class="dos"><a class="link" href="loginregistro/login.php">Login</a></li>';
-                    echo '<li class="dos"><a class="link" href="loginregistro/registro.php">Registrate</a></li>';
+                    echo '<li class="dos"><a class="link" href="../loginregistro/login.php">Login</a></li>';
+                    echo '<li class="dos"><a class="link" href="../loginregistro/registro.php">Registrate</a></li>';
                 }
             ?>         
                 

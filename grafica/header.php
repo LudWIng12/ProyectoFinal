@@ -36,11 +36,11 @@
             <?php
                 if(isset($_SESSION["usuario"])){
                     $usr=$_SESSION["usuario"];
-                      echo '<li class="dos"><a class="link" href="loginregistro/logout.php">Salir</a></li>';
+                      echo '<li class="dos"><a class="link" href="../loginregistro/logout.php">Salir</a></li>';
                       echo "<a>$usr</a>";
                 }else{
-                    echo '<li class="dos"><a class="link" href="loginregistro/login.php">Login</a></li>';
-                    echo '<li class="dos"><a class="link" href="loginregistro/registro.php">Registrate</a></li>';
+                    echo '<li class="dos"><a class="link" href="../loginregistro/login.php">Login</a></li>';
+                    echo '<li class="dos"><a class="link" href="../loginregistro/registro.php">Registrate</a></li>';
                 }
             ?>         
                 
