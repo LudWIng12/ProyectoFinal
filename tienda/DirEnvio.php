@@ -1,5 +1,6 @@
 <?php
     include "header.php";
+    if(isset($_SESSION['usuario'])){
 ?>
 <head>
     <link rel="stylesheet" href="Footer.css">
@@ -186,3 +187,10 @@
     </div>
     <script src="https://kit.fontawesome.com/a2cc4a6c09.js" crossorigin="anonymous"></script>
 </div>
+<?php
+    }else{
+        echo "<script type='text/javascript'>
+                    document.location.href = '../loginregistro/login.php';
+                    </script>";
+    }
+?>
