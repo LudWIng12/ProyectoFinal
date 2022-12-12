@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos_tienda.css">
-    <link rel="stylesheet" href="../HeadFooter.css">
+    <link rel="stylesheet" href="../css/Header.css">
+    <link rel="stylesheet" href="../css/HeadFooter.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
 </head>
@@ -44,10 +45,6 @@ if(isset($_SESSION['carrito'])){
 
     //declaramos variable
     if(!isset($totalcantidad)){$totalcantidad = '';}else{ $totalcantidad = $totalcantidad;}
-?>
-
-<?php
-    include "header.php";
 ?>
 
 <body>
@@ -243,23 +240,11 @@ if(isset($_SESSION['carrito'])){
          }//fin 
 ?>
 
-<div id="pie">
-    <div>
-        <h1> Contactanos </h1>
-    </div>
-    <div class="icons">
-        <div><a class="link2"  href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></div>
-        <div><a class="link2" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></div>
-        <div><a class="link2" href="https://www.instagram.com/alfalobodinamita07/"><i class="fab fa-instagram"></i></a></div>
-        <div><a class="link2" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></div>
-    </div>
-    <div>
-            <p>@CopyrightLoboGamer 2022</p>
-        </div>
-    <script src="https://kit.fontawesome.com/a2cc4a6c09.js" crossorigin="anonymous"></script>
-</div>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
 </body>
+
+
 </html>
