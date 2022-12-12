@@ -1,15 +1,15 @@
 <?php
    session_start();
     
-    $servidor='localhost';
+    /*$servidor='localhost';
     $cuenta='root';
     $password='';
-    $bd='tienda';
+    $bd='tienda';*/
 
-   /* $servidor='localhost';
+   $servidor='localhost';
     $cuenta='id19899694_equipo4';
     $password='BbsLMq?oUi\RB7[P';
-    $bd='id19899694_tienda';*/
+    $bd='id19899694_tienda';
     
     $_SESSION["id"] = '';
     $_SESSION["nombre"] = '';
@@ -75,7 +75,7 @@
 
         echo "<script>
             alert('Producto actualizado! :P');
-            window.location.href='index.php';
+            window.location.href='index.php'; window.location.href='https://tiendadbproyecto.000webhostapp.com/tienda/admin_tienda.php';
         </script>";
     }
        

@@ -3,15 +3,15 @@
 
     $idEnviado=$_GET['id'];
     
-    $servidor='localhost';
+    /*$servidor='localhost';
     $cuenta='root';
     $password='';
-    $bd='tienda';
+    $bd='tienda';*/
 
-   /* $servidor='localhost';
+    $servidor='localhost';
     $cuenta='id19899694_equipo4';
     $password='BbsLMq?oUi\RB7[P';
-    $bd='id19899694_tienda';*/
+    $bd='id19899694_tienda';
     
 
     $conexion = new mysqli($servidor,$cuenta,$password,$bd);

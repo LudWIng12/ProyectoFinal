@@ -36,15 +36,15 @@
 <?php
     
 
-    $servidor='localhost';
+    /*$servidor='localhost';
     $cuenta='root';
     $password='';
-    $bd='tienda';
+    $bd='tienda';*/
 
-   /* $servidor='localhost';
+    $servidor='localhost';
     $cuenta='id19899694_equipo4';
     $password='BbsLMq?oUi\RB7[P';
-    $bd='id19899694_tienda';*/
+    $bd='id19899694_tienda';
      
     //conexion a la base de datos
     $conexion = new mysqli($servidor,$cuenta,$password,$bd);
@@ -59,6 +59,7 @@
          $resultado = $conexion -> query($sql); //aplicamos sentencia
          ?>
          <p align="right">
+             <a href="https://tiendadbproyecto.000webhostapp.com/grafica/graficas.php" class="btn btn-primary" style="">Graficas de los productos</a>
             <a href="agregar_producto.php" class="btn btn-primary" style="">Agregar producto</a>
                 <?php
                 $numPro = 0;
@@ -76,7 +77,7 @@
                 <div class="prod">
                     <div class="card-group" style="width: 10rem;">
                         <div class="card">
-                            <img class="card-img-top" src="<?php echo $fila['nomArch'];?>" alt="Card image cap">
+                            <img class="card-img-top" src="<?php echo $fila['nomArch'];?>" alt="Card image cap" style="width: 100px; height: 150px;>
                             <div class="card-body">
                                 <h5 class="card-title">
                                     <?php 
@@ -91,9 +92,6 @@
                                     categoria: <?php 
                                         echo $fila['categoria'];
                                     ?>
-                                    <button id="<?php echo $fila['nombre'] ?>" onclick="agregar(this.id)">
-                                        <img class="img-fluid" src="../images/carrito_.png" alt="" width="50" height="15">
-                                    </button>
                                     <br>
                                     <?php 
                                         echo $fila['descripcion'];

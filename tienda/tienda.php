@@ -139,15 +139,15 @@ if(isset($_SESSION['carrito'])){
 <?php
     
 
-    $servidor='localhost';
+    /*$servidor='localhost';
     $cuenta='root';
     $password='';
-    $bd='tienda';
+    $bd='tienda';*/
 
-   /* $servidor='localhost';
+    $servidor='localhost';
     $cuenta='id19899694_equipo4';
     $password='BbsLMq?oUi\RB7[P';
-    $bd='id19899694_tienda';*/
+    $bd='id19899694_tienda';
      
     //conexion a la base de datos
     $conexion = new mysqli($servidor,$cuenta,$password,$bd);
@@ -181,9 +181,9 @@ if(isset($_SESSION['carrito'])){
                
 
                 <div class="prod">
-                    <div class="card-group" style="width: 14rem;">
+                    <div class="card-group" style="width: 10rem;">
                         <div class="card">
-                        <img class="card-img-top" src="<?php echo $fila['nomArch'];?>" alt="Card image cap">
+                            <img class="card-img-top" src="<?php echo $fila['nomArch'];?>" alt="Card image cap" style="width: 100px; height: 150px;>
                             <div class="card-body">
                             
                                 <h5 class="card-title">

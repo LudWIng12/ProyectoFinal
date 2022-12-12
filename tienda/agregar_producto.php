@@ -1,14 +1,14 @@
 <?php
     
-    $servidor='localhost';
+    /*$servidor='localhost';
     $cuenta='root';
     $password='';
-    $bd='tienda';
+    $bd='tienda';*/
 
-   /* $servidor='localhost';
+    $servidor='localhost';
     $cuenta='id19899694_equipo4';
     $password='BbsLMq?oUi\RB7[P';
-    $bd='id19899694_tienda';*/
+    $bd='id19899694_tienda';
      
     //conexion a la base de datos
     $conexion = new mysqli($servidor,$cuenta,$password,$bd);
@@ -54,7 +54,7 @@
                 if ($conexion->affected_rows >= 1){ //revisamos que se inserto un registro
                     echo "<script>
                         alert('Producto agregado! :D');
-                        window.location.href='index.php';
+                        window.location.href='https://tiendadbproyecto.000webhostapp.com/tienda/admin_tienda.php';
                     </script>";
                 }//fin
              
