@@ -18,7 +18,7 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="Images/logo_gif.gif" class="d-block w-100" alt="..." id="imgCarrusel">
+            <img src="Images/logo_gif.gif" class="d-block w-100" alt=".." id="imgCarrusel">
         </div>
         <div class="carousel-item">
             <img src="Images/Carrusel10.jpg" class="d-block w-100" alt="...">
@@ -58,9 +58,10 @@
         <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
+
     </div>
     <div class="eslogan">
         <p>Game On - ¡Sube de nivel tu diversión!</p>

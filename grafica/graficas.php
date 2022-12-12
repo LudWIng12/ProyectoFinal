@@ -16,8 +16,8 @@
 </head>
 
 <body>
-    <div class="col-lg-12" style="padding-top: 20px;">
-        <div class="card">
+    <div class="col-lg-12 " style="padding-top: 20px;">
+        <div class="card w-75 cartaG">
             <h5 class="card-header">Graficas</h5>
             <div class="card-body">
                 <div class="row">
