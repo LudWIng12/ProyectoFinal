@@ -164,7 +164,7 @@ if(isset($_SESSION['carrito'])){
          $sql = 'select * from productos';//hacemos cadena con la sentencia mysql que consulta todo el contenido de la tabla
          $resultado = $conexion -> query($sql); //aplicamos sentencia
          ?>
-         <p align="right">
+         <p >
             <a href="filtro_nintendo_switch.php" class="btn btn-primary" style="">Nintendo Switch</a>
             <a href="filtro_xbox.php" class="btn btn-primary" style="">XBox</a>
                 <?php
@@ -244,7 +244,24 @@ if(isset($_SESSION['carrito'])){
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
-</body>
 
+</body>
+<style>
+    #pie{
+        position: absolute;
+    }
+</style>
+<div id="pie">
+        <div>
+            <h1> Contactanos </h1>
+        </div>
+        <div class="icons">
+          <div><a class="link2"  href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></div>
+          <div><a class="link2" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></div>
+          <div><a class="link2" href="https://www.instagram.com/alfalobodinamita07/"><i class="fab fa-instagram"></i></a></div>
+          <div><a class="link2" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></div>
+      </div>
+        <script src="https://kit.fontawesome.com/a2cc4a6c09.js" crossorigin="anonymous"></script>
+    </div>
 
 </html>
