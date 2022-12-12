@@ -80,21 +80,21 @@
                 </li>
                 <li>
                     <label for="nombre">NOMBRE: </label>
-                    <input type="text" name="nombre" id="nombre" require> <br> <br>
+                    <input type="text" name="nombre" id="nombre" required> <br> <br>
                 </li>
                 <li>
                     <label for="apellido">APELLIDO: </label> 
-                    <input type="text" name="apellido" id="appellido" require><br> <br>
+                    <input type="text" name="apellido" id="appellido" required><br> <br>
                 </li>
                 
                 <li>
                     <label for="email">EMAIL: </label> 
-                    <input type="email" name="emal" id="email" default="Correo sacado del inicio de sesion" require> <br> <br>
+                    <input type="email" name="emal" id="email" default="Correo sacado del inicio de sesion" required> <br> <br>
                 </li>
                 
                 <li>
                     <label for="telefono">TELEFONO: </label> 
-                    <input type="tel" name="telefono" id="telefono" require> <br> <br>
+                    <input type="tel" name="telefono" id="telefono" required> <br> <br>
                 </li>
                 
                 <li>
@@ -104,31 +104,31 @@
                 
                 <li>
                     <label for="calle">CALLE: </label>
-                    <input type="text" name="calle" id="calle" maxlenght="80" size="82" require> <br> <br>
+                    <input type="text" name="calle" id="calle" maxlenght="80" size="82" required> <br> <br>
                 </li>
                 
                 <li>
                     <label for="numero">NUMERO: </label>
-                    <input type="number" name="numero" id="numero" maxlenght="10" size="10" require> <br> <br>
+                    <input type="number" name="numero" id="numero" maxlenght="10" size="10" required> <br> <br>
                 </li>
                 
                 <li>
                     <label for="colonia">COLONIA:</label>
-                    <input type="text" name="colonia" id="colonia" maxlenght="80" size="80" require><br> <br>
+                    <input type="text" name="colonia" id="colonia" maxlenght="80" size="80" required><br> <br>
                 </li>
                 
                 <li>
                     <label for="CP">CP: </label>
-                    <input type="number" name="CP" id="CP" maxlenght="5" size="10" require> <br> <br>
+                    <input type="number" name="CP" id="CP" maxlenght="5" size="10" required> <br> <br>
                 </li>
                 
                 <li>
                     <label for="ciudad">CIUDAD: </label> 
-                    <input type="text" name="ciudad" id="ciudad" maxlenght="80" size="80" require> 
+                    <input type="text" name="ciudad" id="ciudad" maxlenght="80" size="80" required> 
                 
                 <li>
                     <label for="estado">ESTADO: </label>
-                    <input list="estados">
+                    <input list="estados" required>
                     <datalist id="estados">
                         <option value="Aguascalientes"></option>
                         <option value="Baja California Norte"></option>
