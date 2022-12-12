@@ -9,7 +9,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos_tienda.css">
     <link rel="stylesheet" href="../css/Header.css">
@@ -184,8 +183,9 @@ if(isset($_SESSION['carrito'])){
                 <div class="prod">
                     <div class="card-group" style="width: 14rem;">
                         <div class="card">
-                            <img class="card-img-top" src="<?php echo $fila['nomArch'];?>" alt="Card image cap">
+                        <img class="card-img-top" src="<?php echo $fila['nomArch'];?>" alt="Card image cap">
                             <div class="card-body">
+                            
                                 <h5 class="card-title">
                                     <?php 
                                         echo $fila['nombre'];

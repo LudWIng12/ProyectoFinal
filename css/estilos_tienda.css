@@ -83,6 +83,9 @@ body {
    list-style-type: none;
    display: inline-block;
   }
+  .card-img-top{
+    height: 1px;
+  }
   .icons{
     position: relative;
     margin-top: 50px;
