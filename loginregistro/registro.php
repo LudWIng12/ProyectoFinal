@@ -27,6 +27,7 @@
                 //obtenemos datos del formulario
                 $correo =$_POST['correo'];
                 $cuenta =$_POST['cuenta'];
+                $nombre =$_POST['nombre'];
                 $pass =$_POST['contra'];
                 $pass2 =$_POST['contra2'];
                 $passhash = password_hash($pass,PASSWORD_DEFAULT);
@@ -38,7 +39,7 @@
                     <?php
                 }else{
                 //hacemos cadena con la sentencia mysql para insertar datos
-                $sql = "INSERT INTO usuarios ( cuenta, contrasena,correo) VALUES('$cuenta','$passhash','$correo')";
+                $sql = "INSERT INTO usuarios ( cuenta,nombre, contrasena,correo) VALUES('$cuenta','$nombre','$passhash','$correo')";
                 $conexion->query($sql);  //aplicamos sentencia que inserta datos en la tabla usuarios de la base de datos
                 $email = $_POST["correo"];
                 
@@ -126,6 +127,10 @@
                     <div class="form-group">
                         <label for="correo" style="color:white;">Correo</label>
                         <input type="email" class="form-control" name="correo" id="correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo" style="color:white;">Nombre</label>
+                        <input type="text" class="form-control" name="nombre" id="nombre" required>
                     </div>
                     <div class="form-group">
                         <label for="cuenta" style="color:white;">Cuenta</label>

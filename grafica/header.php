@@ -15,15 +15,15 @@
         <div class="logo" ><img class="uno" src="Images/logo_white_large.png"></img></div>
         <div>
             <ul class="nav">           
-                <li class="dos"><a class="link" href="index.php">Inicio</a></li>
-                <li class="dos"><a class="link" href="tienda/tienda.php">Tienda</a></li>
-                <li class="dos"><a class="link" href="Contacto.php">Contacto</a></li> 
-                <li class="dos"><a class="link" href="acerca.php">Acerca de</a></li> 
-                <li class="dos"><a class="link" href="ayuda.php">Ayuda</a></li> 
+                <li class="dos"><a class="link" href="../index.php">Inicio</a></li>
+                <li class="dos"><a class="link" href="../tienda/tienda.php">Tienda</a></li>
+                <li class="dos"><a class="link" href="../Contacto.php">Contacto</a></li> 
+                <li class="dos"><a class="link" href="../acerca.php">Acerca de</a></li> 
+                <li class="dos"><a class="link" href="../ayuda.php">Ayuda</a></li> 
                 <?php
                     if(isset($_SESSION["usuario"]) && $_SESSION["usuario"]=="admin"){
-                        echo '<li class="dos"><a class="link" href="tienda/admin_tienda.php">Modificar</a></li> ';
-                        echo '<li class="dos"><a class="link" href="grafica/graficas.php">Graficas</a></li> ';
+                        echo '<li class="dos"><a class="link" href="../tienda/admin_tienda.php">Modificar</a></li> ';
+                        echo '<li class="dos"><a class="link" href="graficas.php">Graficas</a></li> ';
                     }
                 ?>
             </ul>

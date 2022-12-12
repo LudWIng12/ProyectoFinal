@@ -7,7 +7,7 @@
         public $conexion;
 
         public function __construct(){
-            $this->servidor = "localhost: 33065";
+            $this->servidor = "localhost";
             $this->usuario = "root";
             $this->contrasena = "";
             $this->baseDatos = "tienda";

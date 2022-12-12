@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php include "header.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,9 +42,7 @@ if(isset($_SESSION['carrito'])){
     if(!isset($totalcantidad)){$totalcantidad = '';}else{ $totalcantidad = $totalcantidad;}
 ?>
 
-<?php
-    include "header.php";
-?>
+
 
 <body>
 
