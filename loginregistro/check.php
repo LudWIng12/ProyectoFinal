@@ -56,7 +56,7 @@
                 }
                 if($row["bloqueo"]==1){
                     $_SESSION["block"]=true;
-                    $_SESSION["usuario"] = $user;
+                    //$_SESSION["usuario"] = $user;
                     //var_dump($_SESSION["block"]);
                     echo '<script> alert("Cuenta bloqueada") </script>';
                 }else{

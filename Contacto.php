@@ -18,10 +18,10 @@
 <body>
 
 <h3>Tienes alguna duda? Contactanos!</h3>
-<form name="frmContacto" method="post" action="correoElectronico.php">      
-    <input name="nom" type="text" class="feedback-input" placeholder="Nombre" />   
-    <input name="mail"  type="text" class="feedback-input" placeholder="Email" />
-    <textarea name="mensaje" id="men" class="feedback-input" placeholder="Comentario"></textarea>
+<form name="frmContacto" method="post" action="correocontacto.php">      
+    <input name="nomcon" id="nomcon" type="text" class="feedback-input" placeholder="Nombre" />   
+    <input name="mailc"  id="mailc" type="text" class="feedback-input" placeholder="Email" />
+    <textarea name="mensajecon" id="mencon" class="feedback-input" placeholder="Comentario"></textarea>
     <input type="submit" name="enviar" value="Enviar"/>
 </form>
 

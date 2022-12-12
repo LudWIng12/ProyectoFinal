@@ -39,7 +39,7 @@
                 if(isset($_SESSION["usuario"])){
                     $usr=$_SESSION["usuario"];
                       echo '<li class="dos"><a class="link" href="logout.php">Salir</a></li>';
-                      echo "<a>$usr</a>";
+                      echo "<a style='color:white;'>$usr</a>";
                 }else{
                     echo '<li class="dos"><a class="link" href="login.php">Login</a></li>';
                     echo '<li class="dos"><a class="link" href="registro.php">Registrate</a></li>';
