@@ -91,7 +91,7 @@
             }
         }else{  
         
-        echo '<script> alert("Usuario o contraseña inexistentes!") </script>'; 
+        echo '<script> alert("Favor de ingresar su usuario") </script>'; 
         
         
     } 

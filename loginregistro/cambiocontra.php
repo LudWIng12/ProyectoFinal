@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    include "header.php";
     $servidor='localhost';
     $cuenta='root';
     $password='';
@@ -22,8 +22,15 @@
                 //obtenemos datos del formulario
                 $cuenta =$_SESSION['usuario'];
                 $pass =$_POST['contra'];
+                $pass2 =$_POST['contra2'];
                 $passhash = password_hash($pass,PASSWORD_DEFAULT);
-                
+                if($pass != $pass2){
+                    echo '<script> alert("Contraseñas no coinciden") </script>';
+                    ?> <script type='text/javascript'>
+                    document.location.href = 'cambiocontra.php';
+                    </script>
+                    <?php
+                }else{
                 //hacemos cadena con la sentencia mysql para insertar datos
                 $sql = "UPDATE usuarios SET contrasena='$passhash',bloqueo='0',nuevacontra='0' WHERE cuenta='$cuenta'";
                 $conexion->query($sql);  //aplicamos sentencia que inserta datos en la tabla usuarios de la base de datos
@@ -35,6 +42,7 @@
                     <?php
                 }//fin
          }//fin    
+        }
     }
 
 
@@ -55,9 +63,6 @@
     </style>
 </head>
 
-<?php
-    include "header.php";
-?>
 
 <body>
     <div class="container">
