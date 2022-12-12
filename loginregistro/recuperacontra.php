@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    include "header.php";
     error_reporting(E_ERROR | E_PARSE);
     $servidor = "localhost";  
     $cuenta = "root";  
@@ -10,9 +10,9 @@
     // $password = ']r2OafKP*S^{mdc^';  
     // $bd = "id19918439_bdprueba";   
     //$cont = $_SESSION['num'];
-    require 'mailer/Exception.php';
-    require 'mailer/PHPMailer.php';
-    require 'mailer/SMTP.php';
+    require 'PHP/Exception.php';
+    require 'PHP/PHPMailer.php';
+    require 'PHP/SMTP.php';
             use PHPMailer\PHPMailer\PHPMailer;
             use PHPMailer\PHPMailer\Exception; 
    function randomText( $length = 8 ) 
@@ -65,12 +65,12 @@
                     $mail->isSMTP();
                     $mail->Host       = 'smtp.office365.com';                   
                     $mail->SMTPAuth   = true;                                   
-                    $mail->Username   = 'al292422@edu.uaa.mx';                  
-                    $mail->Password   = 'uaa.Lu1s';                               
+                    $mail->Username   = 'al291590@edu.uaa.mx';                  
+                    $mail->Password   = 'Jg1973684250';                               
                     $mail->SMTPSecure = 'tls';
                     $mail->Port       = 587;
                     
-                    $mail->setFrom('al292422@edu.uaa.mx', 'Equipo 4');
+                    $mail->setFrom('al291590@edu.uaa.mx', 'Equipo 4');
                     $mail->addAddress($email);
                     
                     $mail->isHTML(true);
@@ -104,9 +104,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php
-    include "header.php";
-?>
 
 <head>
     <meta charset="UTF-8">
@@ -129,11 +126,11 @@
         <div class="row">
             <div class="col-4">
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method='post'>
-                    <h2>Recuperacion de contraseña</h2>
+                    <h2 style="color:white;">Recuperacion de contraseña</h2>
                     
                     
                     <div class="form-group">
-                        <label for="cuenta">Cuenta</label>
+                        <label for="cuenta" style="color:white;">Cuenta</label>
                         <input type="text" id="cuenta" name="cuenta" class="form-control" required>
                     </div>
                     

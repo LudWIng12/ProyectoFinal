@@ -64,14 +64,14 @@
         <div class="row">
             <div class="col-4">
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method='post'>
-                    <h2>Cambio de contraseña</h2>
+                    <h2 style="color:white;">Cambio de contraseña</h2>
                     
                     <div class="form-group">
-                        <label for="contra">Contraseña</label>
+                        <label for="contra" style="color:white;">Contraseña</label>
                         <input name="contra" type="password" class="form-control" id="contra" required>
                     </div>
                     <div class="form-group">
-                        <label for="contra2">Confirmar Contraseña</label>
+                        <label for="contra2" style="color:white;">Confirmar Contraseña</label>
                         <input name="contra2" type="password" class="form-control" id="contra2" required>
                         <span id='message'></span>
                     </div>

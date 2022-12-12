@@ -4,9 +4,9 @@
     $cuenta='root';
     $password='';
     $bd='tienda';
-    require 'mailer/Exception.php';
-    require 'mailer/PHPMailer.php';
-    require 'mailer/SMTP.php';
+    require 'PHP/Exception.php';
+    require 'PHP/PHPMailer.php';
+    require 'PHP/SMTP.php';
             use PHPMailer\PHPMailer\PHPMailer;
             use PHPMailer\PHPMailer\Exception;  
             
@@ -49,17 +49,19 @@
                     $mail->isSMTP();
                     $mail->Host       = 'smtp.office365.com';                   
                     $mail->SMTPAuth   = true;                                   
-                    $mail->Username   = 'al292422@edu.uaa.mx';                  
-                    $mail->Password   = 'uaa.Lu1s';                               
+                    $mail->Username   = 'al291590@edu.uaa.mx';                  
+                    $mail->Password   = 'Jg1973684250';                               
                     $mail->SMTPSecure = 'tls';
                     $mail->Port       = 587;
                     
-                    $mail->setFrom('al292422@edu.uaa.mx', 'Equipo 4');
+                    $mail->setFrom('al291590@edu.uaa.mx', 'Equipo 4');
                     $mail->addAddress($email);
                     
                     $mail->isHTML(true);
                     $mail->Subject = 'Cupon de descuento';
-                    $mail->Body    = "<h1>Tu cupon de descuento!:$contranew</h1>";
+                    $mail->AddEmbeddedImage('../images/cupon1.png', 'cupon');
+                    $mail->Body    = "<h1>Tu cupon de descuento!:<img src='cid:cupon'/></h1>";
+                    
                     #This is the body in plain text for non-HTML mail clients
                     $mail->AltBody = 'Disfruta!';
 
@@ -119,22 +121,22 @@
         <div class="row">
             <div class="col-4">
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method='post'>
-                    <h2>Registro de Usuarios</h2>
+                    <h2 style="color:white;">Registro de Usuarios</h2>
                     
                     <div class="form-group">
-                        <label for="correo">Correo</label>
+                        <label for="correo" style="color:white;">Correo</label>
                         <input type="email" class="form-control" name="correo" id="correo" required>
                     </div>
                     <div class="form-group">
-                        <label for="cuenta">Cuenta</label>
+                        <label for="cuenta" style="color:white;">Cuenta</label>
                         <input type="text" id="cuenta" name="cuenta" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label for="contra">Contraseña</label>
+                        <label for="contra" style="color:white;">Contraseña</label>
                         <input name="contra" type="password" class="form-control" id="contra" required>
                     </div>
                     <div class="form-group">
-                        <label for="contra2">Confirmar Contraseña</label>
+                        <label for="contra2" style="color:white;">Confirmar Contraseña</label>
                         <input name="contra2" type="password" class="form-control" id="contra2" required>
                         <span id='message'></span>
                     </div>
