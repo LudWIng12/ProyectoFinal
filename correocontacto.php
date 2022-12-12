@@ -35,10 +35,12 @@
                     $mail->AltBody = 'Contacto';
 
                     $mail->send();
+                    echo '<script> alert("Gracias por ponerte en contacto!") </script>'; 
                     ?> 
-                    <!-- <script type='text/javascript'>
+                    
+                    <script type='text/javascript'>
                     document.location.href = 'Contacto.php';
-                    </script> -->
+                    </script>
                     <?php
                     var_dump($mail);
                 }
