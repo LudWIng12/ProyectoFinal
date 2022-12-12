@@ -17,7 +17,7 @@
 
 <body>
 
-<h3>Tienes alguna duda? Contactanos!</h3>
+<h3>Tienes alguna duda o sugerencia? Contactanos!</h3>
 <form name="frmContacto" method="post" action="correoElectronico.php">      
     <input name="nom" type="text" class="feedback-input" placeholder="Nombre" />   
     <input name="mail"  type="text" class="feedback-input" placeholder="Email" />
