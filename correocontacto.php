@@ -9,7 +9,7 @@
                 $correocon = $_POST["mailc"];
                 $nombrecon = $_POST["nomcon"];
                 $mensaje = $_POST["mensajecon"];
-                $email ="neroxpilgrim@gmail.com";
+                $email ="webproyectof@gmail.com";
                 $mail = new PHPMailer(true);
 
                 try{
@@ -17,12 +17,12 @@
                     $mail->isSMTP();
                     $mail->Host       = 'smtp.office365.com';                   
                     $mail->SMTPAuth   = true;                                   
-                    $mail->Username   = 'al270121@edu.uaa.mx';                  
-                    $mail->Password   = 'Fisa1234';                               
+                    $mail->Username   = 'al291590@edu.uaa.mx';                  
+                    $mail->Password   = 'Jg1973684250';                               
                     $mail->SMTPSecure = 'tls';
                     $mail->Port       = 587;
                     
-                    $mail->setFrom('al270121@edu.uaa.mx', 'Equipo 4');
+                    $mail->setFrom('al291590@edu.uaa.mx', 'Equipo 4');
                     $mail->addAddress($email);
                     
                     $mail->isHTML(true);
